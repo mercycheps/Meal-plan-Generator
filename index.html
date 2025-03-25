@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Plan Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <h1>Meal Plan Generator</h1>
+    <header>
+        <h1>Meal Plan Generator</h1>
+    </header>
 
-    <form id="meal-Plan-Form">
-        <label for="diet"> Diet Type:</label>
-        <select id="diet">
-            <option value="">Any</option>
-            <option value="vegan">Vegan</option>
-            <option value="vegeterian">Vegeterian</option>
-            <option value="ketogenic">Keto</option>
-            <option value="paleo">Paleo</option>
-        </select>
+    <main>
+        <form id="meal-Plan-Form">
+            <div class="form-group">
+                <label for="diet">Diet Type:</label>
+                <select id="diet">
+                    <option value="">Any</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegeterian">Vegeterian</option>
+                    <option value="ketogenic">Keto</option>
+                    <option value="paleo">Paleo</option>
+                </select>
+            </div>
 
-        <label for="calories">Target Calories:</label>
-        <input type="number" id="calories" placeholder="like; 1000kcal">
+            <div class="form-group">
+                <label for="calories">Target Calories:</label>
+                <input type="number" id="calories" placeholder="1000kcal">
+            </div>
 
-        <button type="submit">Get personalized Meal Plan</button>
-    </form>
+            <button type="submit" class="submit-btn">Get personalized Meal Plan</button>
+        </form>
 
-    <div id="mealPlanResult"></div>
+        <div id="mealPlanResult"></div>
+    </main>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
