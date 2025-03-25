@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Meal Plan Generator</h1>
+
+    <form id="meal-Plan-Form">
+        <label for="diet"> Diet Type:</label>
+        <select id="diet">
+            <option value="">Any</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegeterian">Vegeterian</option>
+            <option value="ketogenic">Keto</option>
+            <option value="paleo">Paleo</option>
+        </select>
+
+        <label for="calories">Target Calories:</label>
+        <input type="number" id="calories" placeholder="like; 1000kcal">
+
+        <button type="submit">Get personalized Meal Plan</button>
+    </form>
+
+    <div id="mealPlanResult"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
