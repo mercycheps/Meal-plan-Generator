@@ -42,9 +42,10 @@ function fetchData() {
 
     return Promise.resolve({
         "week": {
-            "monday": {
-                "meals": [
+            "Monday": {
+                "meals": [ 
                     {
+                
                         "id": 1100990,
                         "image": "blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990.jpg",
                         "imageType": "jpg",
@@ -79,7 +80,7 @@ function fetchData() {
                     "carbohydrates": 248.65
                 }
             },
-            "tuesday": {
+            "Tuesday": {
                 "meals": [
                     {
                         "id": 1100990,
@@ -116,7 +117,7 @@ function fetchData() {
                     "carbohydrates": 281.04
                 }
             },
-            "wednesday": {
+            "Wednesday": {
                 "meals": [
                     {
                         "id": 639637,
@@ -153,7 +154,7 @@ function fetchData() {
                     "carbohydrates": 253.13
                 }
             },
-            "thursday": {
+            "Thursday": {
                 "meals": [
                     {
                         "id": 644854,
@@ -190,7 +191,7 @@ function fetchData() {
                     "carbohydrates": 248.45
                 }
             },
-            "friday": {
+            "Friday": {
                 "meals": [
                     {
                         "id": 644854,
@@ -227,7 +228,7 @@ function fetchData() {
                     "carbohydrates": 244.75
                 }
             },
-            "saturday": {
+            "Saturday": {
                 "meals": [
                     {
                         "id": 716276,
@@ -264,7 +265,7 @@ function fetchData() {
                     "carbohydrates": 271.44
                 }
             },
-            "sunday": {
+            "Sunday": {
                 "meals": [
                     {
                         "id": 634206,
