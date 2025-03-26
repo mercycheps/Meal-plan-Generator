@@ -15,6 +15,7 @@ function displayMealPlan(data) {
         })
 
     })
+    
 
 }
 const myForm = document.getElementById("meal-Plan-Form")
@@ -31,6 +32,18 @@ myForm.addEventListener("submit", function (event) {
             document.getElementById(`mealResults`).innerHTML = `<p style="color:red;">Error loading meal plan. Try again later.</p>`;
         })
 
+})
+const mealPlanButton = document.getElementById("mealPlanButton");
+mealPlanButton.addEventListener("click",function(){
+    const diet = document.getElementById("diet").value;
+    const calories = document.getElementById("calories").value;
+
+ fetchData(diet,calories)
+    .then(data => displayMealPlan(data))
+    .catch(error => {
+    console.error ("Error:", error);
+    document.getElementById(`mealResults`).innerHTML = `<p style="color:red;">Error loading meal plan. Try again later.</p>`;
+    })
 })
 
 function fetchData() {
