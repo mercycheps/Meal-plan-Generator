@@ -45,6 +45,18 @@ mealPlanButton.addEventListener("click",function(){
     document.getElementById(`mealResults`).innerHTML = `<p style="color:red;">Error loading meal plan. Try again later.</p>`;
     })
 })
+const dietInput = document.getElementById("diet");
+const caloriesInput = document.getElementById("calories");
+
+dietInput.addEventListener("change", function () {
+    console.log("Diet changed to:", dietInput.value);
+    // Optionally, you can trigger a fetch here if you want to reload the meal plan immediately
+});
+
+caloriesInput.addEventListener("change", function () {
+    console.log("Calories changed to:", caloriesInput.value);
+    // Optionally, you can trigger a fetch here if you want to reload the meal plan immediately
+});
 
 function fetchData() {
     const apiKey = '6b2bbbe463384177bd03918cbcbe18b4'
