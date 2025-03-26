@@ -50,12 +50,12 @@ const caloriesInput = document.getElementById("calories");
 
 dietInput.addEventListener("change", function () {
     console.log("Diet changed to:", dietInput.value);
-    // Optionally, you can trigger a fetch here if you want to reload the meal plan immediately
+    
 });
 
 caloriesInput.addEventListener("change", function () {
     console.log("Calories changed to:", caloriesInput.value);
-    // Optionally, you can trigger a fetch here if you want to reload the meal plan immediately
+    
 });
 
 function fetchData() {
@@ -66,9 +66,9 @@ function fetchData() {
 
 
     return Promise.resolve({
-        "week": {
+        "Week": {
             "Monday": {
-                "meals": [ 
+                "breakfast": [ 
                     {
                 
                         "id": 1100990,
@@ -78,7 +78,9 @@ function fetchData() {
                         "readyInMinutes": 30,
                         "servings": 2,
                         "sourceUrl": "https://www.foodista.com/recipe/35NX6PZB/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 639954,
                         "image": "Colorful-Wild-Rice-Salad-639954.jpg",
@@ -87,7 +89,9 @@ function fetchData() {
                         "readyInMinutes": 30,
                         "servings": 3,
                         "sourceUrl": "https://www.foodista.com/recipe/RRSS27DD/colorful-wild-rice-salad"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 634404,
                         "image": "Basic-Risotto-634404.jpg",
@@ -106,7 +110,7 @@ function fetchData() {
                 }
             },
             "Tuesday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 1100990,
                         "image": "blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990.jpg",
@@ -115,7 +119,9 @@ function fetchData() {
                         "readyInMinutes": 30,
                         "servings": 2,
                         "sourceUrl": "https://www.foodista.com/recipe/35NX6PZB/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 642585,
                         "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
@@ -124,7 +130,9 @@ function fetchData() {
                         "readyInMinutes": 15,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 654009,
                         "image": "Orecchiette-With-Sun-Dried-and-Fresh-Cherry-Tomatoes-654009.jpg",
@@ -143,7 +151,7 @@ function fetchData() {
                 }
             },
             "Wednesday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 639637,
                         "image": "Classic-scones-639637.jpg",
@@ -152,7 +160,9 @@ function fetchData() {
                         "readyInMinutes": 45,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/8R27PR6L/classic-scones"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 653251,
                         "image": "Noodles-and-Veggies-With-Peanut-Sauce-653251.jpg",
@@ -161,7 +171,9 @@ function fetchData() {
                         "readyInMinutes": 30,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/5VRHVVWQ/noodles-and-veggies-with-peanut-sauce"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 634404,
                         "image": "Basic-Risotto-634404.jpg",
@@ -180,7 +192,7 @@ function fetchData() {
                 }
             },
             "Thursday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 644854,
                         "image": "Gluten-Free-Quinoa-and-Corn-Flour-Crepes-644854.jpg",
@@ -189,7 +201,9 @@ function fetchData() {
                         "readyInMinutes": 60,
                         "servings": 4,
                         "sourceUrl": "http://www.foodista.com/recipe/MGMB6CBY/gluten-free-quinoa-and-corn-flour-crepes"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 643634,
                         "image": "Fresh-Tomatoes-With-Beans-and-Macaroni-643634.jpg",
@@ -198,7 +212,9 @@ function fetchData() {
                         "readyInMinutes": 25,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/LY45JTQD/fresh-tomatoes-with-beans-and-macaroni"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 918028,
                         "image": "creamy-corn-chowder-918028.jpg",
@@ -217,7 +233,7 @@ function fetchData() {
                 }
             },
             "Friday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 644854,
                         "image": "Gluten-Free-Quinoa-and-Corn-Flour-Crepes-644854.jpg",
@@ -226,7 +242,9 @@ function fetchData() {
                         "readyInMinutes": 60,
                         "servings": 4,
                         "sourceUrl": "http://www.foodista.com/recipe/MGMB6CBY/gluten-free-quinoa-and-corn-flour-crepes"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 1697577,
                         "image": "spanish-sardines-pasta-1697577.jpg",
@@ -235,7 +253,9 @@ function fetchData() {
                         "readyInMinutes": 25,
                         "servings": 2,
                         "sourceUrl": "https://maplewoodroad.com/spanish-sardines-pasta/"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 655573,
                         "image": "Penne-Arrabiata-655573.jpg",
@@ -254,7 +274,7 @@ function fetchData() {
                 }
             },
             "Saturday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 716276,
                         "image": "doughnuts-716276.jpg",
@@ -263,7 +283,10 @@ function fetchData() {
                         "readyInMinutes": 45,
                         "servings": 2,
                         "sourceUrl": "https://www.afrolems.com/2014/03/25/doughnuts-recipe/"
-                    },
+                    }
+                ],
+                "lunch": [
+
                     {
                         "id": 642585,
                         "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
@@ -272,7 +295,9 @@ function fetchData() {
                         "readyInMinutes": 15,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 645422,
                         "image": "Green-Cabbage-Stoemp-With-Sausages-645422.jpg",
@@ -291,7 +316,7 @@ function fetchData() {
                 }
             },
             "Sunday": {
-                "meals": [
+                "breakfast": [
                     {
                         "id": 634206,
                         "image": "Banana-Zucchini-Muffins-634206.jpg",
@@ -300,7 +325,9 @@ function fetchData() {
                         "readyInMinutes": 45,
                         "servings": 8,
                         "sourceUrl": "https://www.foodista.com/recipe/JGW253HH/banana-zucchini-muffins"
-                    },
+                    }
+                ],
+                "lunch": [
                     {
                         "id": 642585,
                         "image": "Farfalle-with-fresh-tomatoes--basil-and-mozzarella-642585.jpg",
@@ -309,7 +336,9 @@ function fetchData() {
                         "readyInMinutes": 15,
                         "servings": 4,
                         "sourceUrl": "https://www.foodista.com/recipe/B6CC3QXM/farfalle-with-fresh-tomatoes-basil-and-mozzarella"
-                    },
+                    }
+                ],
+                "dinner": [
                     {
                         "id": 634496,
                         "image": "BBQ-Mac-and-Cheese-634496.jpg",

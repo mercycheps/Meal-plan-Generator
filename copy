@@ -1,0 +1,32 @@
+"Monday": {
+                "meals": [ 
+                    {
+                
+                        "id": 1100990,
+                        "image": "blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990.jpg",
+                        "imageType": "jpg",
+                        "title": "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan",
+                        "readyInMinutes": 30,
+                        "servings": 2,
+                        "sourceUrl": "https://www.foodista.com/recipe/35NX6PZB/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan"
+                    },
+                    {
+                        "id": 639954,
+                        "image": "Colorful-Wild-Rice-Salad-639954.jpg",
+                        "imageType": "jpg",
+                        "title": "Colorful Wild Rice Salad",
+                        "readyInMinutes": 30,
+                        "servings": 3,
+                        "sourceUrl": "https://www.foodista.com/recipe/RRSS27DD/colorful-wild-rice-salad"
+                    },
+                    {
+                        "id": 634404,
+                        "image": "Basic-Risotto-634404.jpg",
+                        "imageType": "jpg",
+                        "title": "Basic Risotto",
+                        "readyInMinutes": 45,
+                        "servings": 2,
+                        "sourceUrl": "https://www.foodista.com/recipe/HQMJRX88/basic-risotto"
+                    }
+                ],
+                
