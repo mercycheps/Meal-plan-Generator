@@ -19,6 +19,7 @@ function displayMealPlan(data) {
         data.week[day].meals.forEach((meal) => {
             container.innerHTML += `
         <div>
+        <img class="meal-image" src="https://img.spoonacular.com/recipes/${meal.image}" />
         ${meal.title}
         Readiness: ${meal.readyInMinutes}
         <div/>

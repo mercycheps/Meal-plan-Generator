@@ -65,3 +65,9 @@ select, input[type="number"] {
 #deleteSavedMenu{
     margin-top: 5px;
 }
+
+
+.meal-image {
+    width: 100px;
+    height: 100px
+}
