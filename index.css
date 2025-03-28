@@ -59,3 +59,9 @@ select, input[type="number"] {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
 }
+#saveMenu{
+    margin-top: 5px;
+}
+#deleteSavedMenu{
+    margin-top: 5px;
+}
