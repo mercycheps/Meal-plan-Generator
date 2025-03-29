@@ -11,7 +11,7 @@ header {
 }
 
 main {
-    max-width: 500px;
+    max-width: 700px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
@@ -70,4 +70,8 @@ select, input[type="number"] {
 .meal-image {
     width: 100px;
     height: 100px
+}
+
+.meal-day {
+    display: flex;
 }

@@ -26,8 +26,12 @@ function displayMealPlan(data) {
 
     Object.keys(data.week).forEach((day) => {
         container.innerHTML += `<h2 style="text-transform: capitalize;"> ${day} </h2>`
+        const dayElement = document.createElement("div")
+        dayElement.classList.add("meal-day")
+        container.appendChild(dayElement)
+        dayElement.id = day
         data.week[day].meals.forEach((meal) => {
-            container.innerHTML += `
+            dayElement.innerHTML += `
         <div>
         <img class="meal-image" src="https://img.spoonacular.com/recipes/${meal.image}" />
         ${meal.title}
