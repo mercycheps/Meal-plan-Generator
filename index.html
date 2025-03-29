@@ -33,17 +33,19 @@
             <button id="mealPlanButton" class="submit-btn">Get personalized Meal Plan</button>
         </form>
         
-        <div id="mealPlanResult">
-            
+        <button style="margin-top: 20px;" onclick="generatePDF()">Download PDF</button>
 
+        <div id="mealPlanResult">
         </div>
         <button id="saveMenu" class="submit-btn">Save Menu</button>
         <button onclick="deleteSavedMenu()" id="deleteSavedMenu" class="submit-btn">Delete Saved Menu</button>
-        <input type="text" id="search" placeholder="Search menus..." onkeyup="searchMenus()">
 
     </main>
 
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 
 </body>
 </html>

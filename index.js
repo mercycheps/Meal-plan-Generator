@@ -4,6 +4,19 @@ function save(data) {
     localStorage.setItem("savedMenu", JSON.stringify(data))
 }
 
+async function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    const content = document.getElementById("mealPlanResult");
+
+    html2canvas(content).then((canvas) => {
+        const imgData = canvas.toDataURL("image/png");
+        pdf.addImage(imgData, "PNG", 10, 10, 190, 0);
+        pdf.save("download.pdf");
+    });
+}
+
 function deleteSavedMenu(){
     const container = document.getElementById('mealPlanResult')
     container.innerHTML = ""
