@@ -32,10 +32,12 @@ function displayMealPlan(data) {
         dayElement.id = day
         data.week[day].meals.forEach((meal) => {
             dayElement.innerHTML += `
-        <div>
+        <div class="meal">
         <img class="meal-image" src="https://img.spoonacular.com/recipes/${meal.image}" />
-        ${meal.title}
-        Readiness: ${meal.readyInMinutes}
+            <div>
+                <p> ${meal.title} </p>
+                <p> Readiness: ${meal.readyInMinutes} </p>
+            </div>
         <div/>
         `
         })
