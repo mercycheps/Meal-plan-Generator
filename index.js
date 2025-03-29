@@ -36,7 +36,9 @@ function displayMealPlan(data) {
         <img class="meal-image" src="https://img.spoonacular.com/recipes/${meal.image}" />
             <div>
                 <p> ${meal.title} </p>
-                <p> Readiness: ${meal.readyInMinutes} </p>
+                <span> Readiness: ${meal.readyInMinutes} </span><br/>
+                <span> Servings: ${meal.servings} </span><br/>
+                <a href="${meal.sourceUrl}" target="_blank" > Go to Recipe </a>
             </div>
         <div/>
         `
